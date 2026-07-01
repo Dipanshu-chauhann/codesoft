@@ -23,8 +23,13 @@ function clearResult() {
 }
 
 function calculateResult() {
+  try{
   resultfield.value = eval(resultfield.value);      //eval() JavaScript ka built-in function hai jo string ko JavaScript code ki tarah execute karta hai.
 }                                                   //Yahan string ke andar jo JavaScript expression hoga, eval() usse execute karke result return karega.
+  catch{
+    resultfield.value="error";
+  }
+}
 
 function appendValue(buttonValue) {
   resultfield.value += buttonValue;
