@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1638dc58e8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="nav-heading"> My Portfolio <h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Dipanshu</span><br> From India.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------about--------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate BCA student and aspiring Full-Stack Developer with a keen interest in creating modern, responsive, and user-friendly web applications. I enjoy solving coding challenges, learning new technologies, and building projects that improve my development skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class=" tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JAVASCRIPT</span><br></li>
+                            <li><span>C++</span><br></li>
+                            <li><span>Git & Github</span><br></li>
+
+                        </ul>
+                    </div>
+              
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021</span><br> I scored 100% in 10<sup>th</sup> from HBSE Board.</li>
+                            <li><span>2023</span><br> I scored 82.2% in 12<sup>th</sup> Science stream (PCM) from HBSE Board. </li>
+                            <li><span>2027</span><br>currently pursuing in BCA (3rd year) From J.C.Bose University of Science And Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <!-- ---------------------projects--------------------- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="amazon.png">
+                    <div class="layer">
+                        <h3>Amazon clone</h3>
+                        <p>This is a clone of amazon.com which is designed using HTML and CSS technology.<br>which gives real app experience.
+                        </p>
+                        <a href="http://127.0.0.1:5500/html%20code/amazon/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="calculator.png">
+                    <div class="layer">
+                        <h3>Basic Calculator</h3>
+                        <p>This is a basic calculator which perform operations such as addition,subtraction,multiplication,division.<br>This is designed using HTML,CSS and JAVASCRIPT.
+                        </p>
+                        <a href="http://127.0.0.1:5500/html%20code/basic%20calculator/calculator.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="currency_convertor.png">
+                    <div class="layer">
+                        <h3>Currency Converter</h3>
+                        <p>This is a currency_convertor which convertes currency of one country into another country's currency.<br>this pages is designed using HTML ,CSS and JAVASCRIPT ,it also includes the concepts of <strong>API's</strong>
+                        </p>
+                        <a href="http://127.0.0.1:5500/html%20code/currency_conv/index.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------------contact--------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Dipanshu2004chauhan@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>9650210346</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/dipanshu_chauhan22?igsh=MWsxbGljanp3b3ZwOQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/dipanshu-chauhan22"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Dipanshu-chauhann"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> by Dipanshu Made with <i
+                    class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+ 
+    <!-- <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwa5bp653NXM5bGquzAof4LUrL8RQDhM2zrCkN2e1t6VkQaov4GDQ09DspIqTbnglDcyw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML= ""
+        },2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script> -->
+<script src="app.js"></script>
+
+</body>
+
+</html>
