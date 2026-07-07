@@ -219,7 +219,7 @@ height: 47px;
 
 .nav-cart{
       width: 68px;
-      margin: 0px 11px 0px 2px;
+      margin: 0px 18px 0px 2px;
 height: 47px;
 color: white;
 display: flex;
@@ -353,6 +353,7 @@ justify-content: center;
     width: 100%;
 }
 .btn{
+    width: 98.5%;
     display: flex;
     justify-content: space-between;
 }
@@ -394,7 +395,7 @@ color: rgb(146, 145, 145);
 }
 .para1{
     height: 20px;
-    width: 95%;
+    width: 94%;
     margin: 0px 20px 0px 20px;
 display: flex;
 justify-content: center;
@@ -426,11 +427,12 @@ background-color: #e2e6e7;
  display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
-    grid-gap: 10px;
-   margin-left: 10px;
-   margin-right: 10px;
+    overflow: hidden;
+    grid-gap: 11px;
+   margin-left: 20px;
+   margin-right: 20px;
 
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .box{
     height: 420px;
